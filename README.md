@@ -7,6 +7,8 @@
 
 - main : 완성된 프로젝트
 - init : 초기 프로젝트 구조
+- practice-example-1 : 실전 예제 1 - 요구사항 분석과 기본 매핑
+- practice-example-2 : 실전 예제 2 - 연관관계 매핑 시작
 
 ## 🚀 요구 사항
 
