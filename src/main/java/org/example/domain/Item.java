@@ -1,10 +1,13 @@
 package org.example.domain;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +23,9 @@ public class Item {
 	private int price;
 
 	private int stockQuantity;
+
+	@ManyToMany(mappedBy = "items")
+	private List<Category> categories;
 
 	public Long getId() {
 		return id;
