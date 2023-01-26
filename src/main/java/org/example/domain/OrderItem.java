@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "ORDER_ITEM")
-public class OrderItem extends BaseEntity {
+public class OrderItem {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

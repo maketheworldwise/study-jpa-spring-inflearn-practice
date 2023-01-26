@@ -5,8 +5,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import org.example.domain.Book;
-
 public class JpaMain {
 
 	public static void main(String[] args) {
@@ -17,10 +15,6 @@ public class JpaMain {
 		entityTransaction.begin();
 
 		try {
-			Book book = new Book();
-			book.setName("JPA");
-			book.setAuthor("김영한");
-			entityManager.persist(book);
 
 			entityTransaction.commit();
 		} catch (Exception e) {
